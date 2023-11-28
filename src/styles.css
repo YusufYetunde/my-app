@@ -1,0 +1,167 @@
+/* styles.css */
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0px 20px;
+}
+
+
+.video-call-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    
+  }
+  .video-header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+   margin-bottom: 15px;
+  }
+  .video-header h1{
+    font-size: 60px;
+  }
+  .header-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #dedede;
+    margin-top: 20px;
+    border-radius: 10px;
+   padding: 20px;
+  }
+  .video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  .video-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+ 
+  
+  .main-video {
+    width: 70%;
+    height:100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    
+  }
+  .main{
+  width: 100%;
+  height: 100%;
+  }
+  .peer-videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    margin-top: 16px;
+    gap: 4px;
+  }
+  .peer-video {
+    height: 150px;
+    width: 150px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .control-buttons {
+    height: 100px;
+    border-radius: 10px;
+    background: #dedede;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 12px;
+  }
+
+  .control-buttons button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+    button:hover {
+      color: #007bff; /* Change color on hover */
+  }
+
+  button:first-child {
+    color: red;
+  }
+
+  button:nth-child(2) {
+    color: #007bff;
+  }
+
+  .chat-page {
+    width: 30%;
+    overflow: hidden;
+    background-color: #dedede;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chat-content {
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .message-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .message-time {
+    font-size: 0.8em;
+    color: #888;
+  }
+  
