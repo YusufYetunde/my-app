@@ -8,9 +8,7 @@ import {
   FaCheckCircle,
   FaRegComment,
 } from "react-icons/fa";
-import {
-  FiCamera, FiCameraOff,
-} from "react-icons/fi"
+import { FiCamera, FiCameraOff } from "react-icons/fi";
 import SimplePeer from "simple-peer";
 import { useNavigate } from "react-router-dom";
 import ChatPage from "./ChatPage";
@@ -77,7 +75,6 @@ const VideoCall: React.FC = () => {
       if (typeof window !== "undefined") {
         navigate("/thank-you");
       }
-      
     };
   }, [navigate, isCallEnded]);
 
@@ -124,20 +121,17 @@ const VideoCall: React.FC = () => {
 
   return (
     <div className="video-call-container">
-     
       <div className="video-section">
-      <div className="video-header">
-        <h1>Logo</h1>
-        <div className="header-title">
-          <h2>Confrence Call</h2>
-          <p>Remakable design and productivity</p>
-        </div>
-      </div>
-        <div className="video-sec">
-          <div className="main-video">
-            {/* Local Video Display */}
-            <video ref={localVideoRef} autoPlay muted  className="main"/>
+        <div className="video-header">
+          <h1>Logo</h1>
+          <div className="header-title">
+            <h2>Confrence Call</h2>
+            <p>Remakable design and productivity</p>
           </div>
+        </div>
+        <div className="video-sec">
+          {/* Local Video Display */}
+          <video ref={localVideoRef} autoPlay muted className="main" />
 
           <div className="peer-videos">
             {/* Remote Video Displays */}
@@ -165,7 +159,7 @@ const VideoCall: React.FC = () => {
             {isMuted ? <FaMicrophoneSlash /> : <FaMicrophone />}
           </button>
           <button onClick={toggleCamera}>
-            {isCameraOn ? <FiCamera /> : <FiCameraOff/>}
+            {isCameraOn ? <FiCamera /> : <FiCameraOff />}
           </button>
           <button onClick={toggleScreenRecording}>
             {isScreenRecording ? <FaVideoSlash /> : <FaVideo />}
@@ -180,7 +174,7 @@ const VideoCall: React.FC = () => {
       <style>{`
         .video-call-container {
         
-          width: ${isChatOpen ? "80%" : "100%"};
+          width: ${isChatOpen ? "100%" : "100%"};
         }
         .chat-page {
           width: ${isChatOpen ? "30%" : "0"};
